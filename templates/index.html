@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boggle</title>
+</head>
+<body>
+    <section>
+        <table>
+            {% for row in board %}
+            <tr>
+                {% for letter in row %}
+                <td>{{ letter }}</td>
+                {%endfor%}
+            </tr>
+            {%endfor%}
+        </table>
+    </section>
+
+    
+</body>
+</html>
